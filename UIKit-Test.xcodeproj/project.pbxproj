@@ -10,20 +10,21 @@
 		C29F81D62A3DE8D5007304DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F81D52A3DE8D5007304DD /* AppDelegate.swift */; };
 		C29F81D82A3DE8D5007304DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F81D72A3DE8D5007304DD /* SceneDelegate.swift */; };
 		C29F81DA2A3DE8D5007304DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F81D92A3DE8D5007304DD /* ViewController.swift */; };
-		C29F81DD2A3DE8D5007304DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29F81DB2A3DE8D5007304DD /* Main.storyboard */; };
 		C29F81DF2A3DE8D6007304DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29F81DE2A3DE8D6007304DD /* Assets.xcassets */; };
 		C29F81E22A3DE8D6007304DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29F81E02A3DE8D6007304DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2429EA32AA79E4000A6BD12 /* CAFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAFilter.h; sourceTree = "<group>"; };
+		C2429EA42AA79E5400A6BD12 /* UIKit-Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit-Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		C29F81D22A3DE8D5007304DD /* UIKit-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29F81D52A3DE8D5007304DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C29F81D72A3DE8D5007304DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C29F81D92A3DE8D5007304DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C29F81DC2A3DE8D5007304DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C29F81DE2A3DE8D6007304DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C29F81E12A3DE8D6007304DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C29F81E32A3DE8D6007304DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DF26C72A7BEE4F0039D4C2 /* UIKit-Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UIKit-Test.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +57,12 @@
 		C29F81D42A3DE8D5007304DD /* UIKit-Test */ = {
 			isa = PBXGroup;
 			children = (
+				C2DF26C72A7BEE4F0039D4C2 /* UIKit-Test.entitlements */,
 				C29F81D52A3DE8D5007304DD /* AppDelegate.swift */,
 				C29F81D72A3DE8D5007304DD /* SceneDelegate.swift */,
+				C2429EA32AA79E4000A6BD12 /* CAFilter.h */,
 				C29F81D92A3DE8D5007304DD /* ViewController.swift */,
-				C29F81DB2A3DE8D5007304DD /* Main.storyboard */,
+				C2429EA42AA79E5400A6BD12 /* UIKit-Test-Bridging-Header.h */,
 				C29F81DE2A3DE8D6007304DD /* Assets.xcassets */,
 				C29F81E02A3DE8D6007304DD /* LaunchScreen.storyboard */,
 				C29F81E32A3DE8D6007304DD /* Info.plist */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					C29F81D12A3DE8D5007304DD = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -127,7 +131,6 @@
 			files = (
 				C29F81E22A3DE8D6007304DD /* LaunchScreen.storyboard in Resources */,
 				C29F81DF2A3DE8D6007304DD /* Assets.xcassets in Resources */,
-				C29F81DD2A3DE8D5007304DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C29F81DB2A3DE8D5007304DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C29F81DC2A3DE8D5007304DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C29F81E02A3DE8D6007304DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +280,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "UIKit-Test/UIKit-Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY2GQFY855;
@@ -292,7 +289,6 @@
 				INFOPLIST_FILE = "UIKit-Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,6 +299,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebvidal.UIKit-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKit-Test/UIKit-Test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +311,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "UIKit-Test/UIKit-Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY2GQFY855;
@@ -320,7 +320,6 @@
 				INFOPLIST_FILE = "UIKit-Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebvidal.UIKit-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKit-Test/UIKit-Test-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
